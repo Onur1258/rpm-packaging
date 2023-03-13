@@ -27,10 +27,6 @@ make %{?_smp_mflags}
 
 
 %install
-yum install -y epel-release
-yum install -y make
-yum install -y golang
-yum install -y zeromq-devel
 make
 mkdir -p %{buildroot}/usr/local/bin
 cp dist/netflow2ng-0.0.3 %{buildroot}/usr/local/bin
